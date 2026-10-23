@@ -1,0 +1,28 @@
+asset_id: character.valkyr_sentinel.v1
+spec_hash: "sha256:f65ef56d531876acd7652a1d366b4f304a7229cdb256dbbc205a6d4631d9b68c"
+provider: "blender-procedural"
+provider_model: "blender-5.2.1-lts"
+task_id: "local-gen-valkyr_sentinel-001"
+created_at: "2026-10-23T05:48:23+00:00"
+request:
+  prompt: "Tall 2.05m armored valkyrie sentinel with shoulder pauldrons and heavy gauntlets, symmetrical A-pose."
+  settings:
+    height_meters: 2.05
+    arm_spread_offset_deg: 8
+  input_hashes: []
+output:
+  format: glb
+  uri: "chars/valkyr_sentinel/model.glb"
+  hash: "sha256:7979e2bcb35ecff36c1a0b1dfa9649a7fb8ef26b6295d5eae4a31ddb099d985c"
+  triangle_count: 120
+  measured_height_meters: 2.05
+  lowest_vertex_y: 0.0
+validation:
+  automated: pass
+  checked_at: "2026-10-23T06:26:53+00:00"
+approval:
+  status: approved
+  approved_by: "dev"
+  approved_at: "2026-10-23T05:48:26+00:00"
+  manifest_hash: "sha256:4a21c557f1426c0408a3cbe9f818519088304c94cdfdceecc477ced699930c93"
+  notes: "Auto-approved (all)"

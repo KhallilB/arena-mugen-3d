@@ -1,0 +1,61 @@
+asset_id: character.kaze_striker.v1
+kind: character
+rights_status: original-design
+engine:
+  name: ArenaMugen3D
+  version: 0.1.0
+  import_format: glb
+coordinate_system: right-handed-y-up
+scale: 1.0_unit_equals_1_meter
+pivot: bottom-center-feet
+materials:
+  shader: pbr-metallic-roughness
+  texture_limits: 2048x2048
+geometry:
+  triangle_budget: 15000
+  lod_requirements: single-lod-prototype
+rig:
+  required: true
+  skeleton: canonical-16-bone-humanoid
+  pose: a-pose-or-t-pose-limbs-separated
+  animation_clips:
+    - idle
+    - walk_forward
+    - walk_back
+    - strafe_left
+    - strafe_right
+    - dash_forward
+    - step_dodge
+    - jump_loop
+    - guard
+    - guard_crush
+    - light_1
+    - light_2
+    - light_3
+    - heavy_neutral
+    - heavy_forward
+    - heavy_launcher
+    - air_light_1
+    - air_light_2
+    - air_heavy
+    - special_projectile
+    - special_rush
+    - throw_grab
+    - hitstun
+    - launched
+    - wall_bounce
+    - knockdown
+    - wakeup
+runtime:
+  collision: bone-socket-capsules
+  platforms: [web, desktop]
+art:
+  original_brief: "Athletic 1.80m cyber-martial artist with glowing cyan visor and sleek gi, symmetrical A-pose."
+  approved_references: []
+acceptance:
+  - imports without manual format conversion
+  - bounding box height normalized to character.json heightMeters (1.80m)
+  - lowest vertex Y snapped to 0.0 at rest pose
+  - triangle count <= 15000
+  - all 16 canonical humanoid bones present and non-degenerate
+  - all 27 required animation clips baked and verified

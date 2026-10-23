@@ -1,0 +1,28 @@
+asset_id: character.pip_brawler.v1
+spec_hash: "sha256:94d6e3dda8694a4f841fde6dddfca814ea0410a2c9856b2cc1f8e52fcbac41e8"
+provider: "blender-procedural"
+provider_model: "blender-5.2.1-lts"
+task_id: "local-gen-pip_brawler-001"
+created_at: "2026-10-23T05:48:15+00:00"
+request:
+  prompt: "Compact 1.15m high-mobility kinetic brawler with oversized power gloves and jet boots, symmetrical A-pose."
+  settings:
+    height_meters: 1.15
+    arm_spread_offset_deg: 6
+  input_hashes: []
+output:
+  format: glb
+  uri: "chars/pip_brawler/model.glb"
+  hash: "sha256:1dfb384389708ad52e96ecc01aa5595e5074f79575db51a0fe35e9e60a7abee4"
+  triangle_count: 120
+  measured_height_meters: 1.15
+  lowest_vertex_y: 0.0
+validation:
+  automated: pass
+  checked_at: "2026-10-23T06:26:53+00:00"
+approval:
+  status: approved
+  approved_by: "dev"
+  approved_at: "2026-10-23T05:48:17+00:00"
+  manifest_hash: "sha256:150e85bc1b11f2cec571cb2ab9f26de2cc860d708af68fb3c5bf0ba7e6c47a14"
+  notes: "Auto-approved (all)"

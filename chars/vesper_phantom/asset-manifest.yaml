@@ -1,0 +1,28 @@
+asset_id: character.vesper_phantom.v1
+spec_hash: "sha256:47f68c28a5a8256aa7c24d95ce701fed23314222b8205eafc0310cc89f987204"
+provider: "blender-procedural"
+provider_model: "blender-5.2.1-lts"
+task_id: "local-gen-vesper_phantom-001"
+created_at: "2026-10-23T05:48:17+00:00"
+request:
+  prompt: "Slender 1.72m neon shinobi assassin with phase cloak, symmetrical A-pose."
+  settings:
+    height_meters: 1.72
+    arm_spread_offset_deg: 4
+  input_hashes: []
+output:
+  format: glb
+  uri: "chars/vesper_phantom/model.glb"
+  hash: "sha256:3785c69881b7581ac91aca75e8fd4a3634a6311a3d700141b890f23a591b4637"
+  triangle_count: 120
+  measured_height_meters: 1.72
+  lowest_vertex_y: 0.0
+validation:
+  automated: pass
+  checked_at: "2026-10-23T06:26:53+00:00"
+approval:
+  status: approved
+  approved_by: "dev"
+  approved_at: "2026-10-23T05:48:20+00:00"
+  manifest_hash: "sha256:9e5b66ede2460e3b783afe0b22f93232c378e0c91e7010428d19ecc8baecf244"
+  notes: "Auto-approved (all)"

@@ -1,0 +1,28 @@
+asset_id: character.kaze_striker.v1
+spec_hash: "sha256:c0cda641db4d8d38f503af08693865ffc03e663c6f9cda194fe0274bfa3a80e5"
+provider: "blender-procedural"
+provider_model: "blender-5.2.1-lts"
+task_id: "local-gen-kaze_striker-001"
+created_at: "2026-10-23T05:48:09+00:00"
+request:
+  prompt: "Athletic 1.80m cyber-martial artist with glowing cyan visor and sleek gi, symmetrical A-pose."
+  settings:
+    height_meters: 1.8
+    arm_spread_offset_deg: 5
+  input_hashes: []
+output:
+  format: glb
+  uri: "chars/kaze_striker/model.glb"
+  hash: "sha256:0638cd2ce650a3372875b73fda64d7ff9b1ef72ab820505d0ef741787892fb03"
+  triangle_count: 120
+  measured_height_meters: 1.8
+  lowest_vertex_y: 0.0
+validation:
+  automated: pass
+  checked_at: "2026-10-23T06:26:53+00:00"
+approval:
+  status: approved
+  approved_by: "dev"
+  approved_at: "2026-10-23T05:48:12+00:00"
+  manifest_hash: "sha256:963d8d64ea0b69095a5a749b6056c198f37601565e4f4bbbb6c4001c68f150d8"
+  notes: "Auto-approved (all)"

@@ -1,0 +1,82 @@
+{
+  "id": "solaris_arcanist",
+  "displayName": "Solaris",
+  "title": "Astral Sovereign",
+  "archetype": "zoner",
+  "version": "1.0.0",
+  "themeColor": "#eab308",
+  "secondaryColor": "#172554",
+  "model": {
+    "file": "model.glb",
+    "heightMeters": 1.85,
+    "statureRatio": 1.03,
+    "shoulderWidthRatio": 1.0,
+    "armSpreadOffsetDeg": 6,
+    "forwardAxis": "+Z"
+  },
+  "stats": {
+    "maxHealth": 950,
+    "maxGuard": 450,
+    "maxMeter": 1000,
+    "walkSpeed": 4.2,
+    "strafeSpeed": 4.0,
+    "dashSpeed": 14.0,
+    "homingDashSpeed": 18.0,
+    "jumpVelocity": 11.0,
+    "gravity": 30.0,
+    "weight": 1.0
+  },
+  "boneMap": {
+    "hips": "Hips",
+    "spine": "Spine",
+    "chest": "Chest",
+    "head": "Head",
+    "upper_arm_l": "UpperArm.L",
+    "forearm_l": "ForeArm.L",
+    "hand_l": "Hand.L",
+    "upper_arm_r": "UpperArm.R",
+    "forearm_r": "ForeArm.R",
+    "hand_r": "Hand.R",
+    "thigh_l": "Thigh.L",
+    "shin_l": "Shin.L",
+    "foot_l": "Foot.L",
+    "thigh_r": "Thigh.R",
+    "shin_r": "Shin.R",
+    "foot_r": "Foot.R"
+  },
+  "hurtboxes": [
+    {
+      "id": "body_lower",
+      "socket": "hips",
+      "radius": 0.31,
+      "offset": [
+        0,
+        0.0,
+        0
+      ],
+      "scaleWithHeight": true
+    },
+    {
+      "id": "body_upper",
+      "socket": "chest",
+      "radius": 0.35,
+      "offset": [
+        0,
+        0.08,
+        0
+      ],
+      "scaleWithHeight": true
+    },
+    {
+      "id": "head",
+      "socket": "head",
+      "radius": 0.21,
+      "offset": [
+        0,
+        0.04,
+        0
+      ],
+      "scaleWithHeight": true
+    }
+  ]
+}

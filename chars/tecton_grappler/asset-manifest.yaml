@@ -1,0 +1,28 @@
+asset_id: character.tecton_grappler.v1
+spec_hash: "sha256:53235ea69ede9c0f2531af3a2ee549ccec5b540e6d36c3b5ecde8fdea22298e0"
+provider: "blender-procedural"
+provider_model: "blender-5.2.1-lts"
+task_id: "local-gen-tecton_grappler-001"
+created_at: "2026-10-23T05:48:12+00:00"
+request:
+  prompt: "Hulking 2.45m basalt stone golem brawler with glowing amber fissure lines and oversized stone gauntlets, symmetrical A-pose, clear limb separation."
+  settings:
+    height_meters: 2.45
+    arm_spread_offset_deg: 12
+  input_hashes: []
+output:
+  format: glb
+  uri: "chars/tecton_grappler/model.glb"
+  hash: "sha256:8bb81e880dfe654c8e4c20bf4d7210a02bb018cada2d18f98475b1c73e34080c"
+  triangle_count: 120
+  measured_height_meters: 2.45
+  lowest_vertex_y: 0.0
+validation:
+  automated: pass
+  checked_at: "2026-10-23T06:26:53+00:00"
+approval:
+  status: approved
+  approved_by: "dev"
+  approved_at: "2026-10-23T05:48:15+00:00"
+  manifest_hash: "sha256:d4ab5db1e523744d70faa2300f9ec01a12b79bde77d7196a13af923fdb3ba06b"
+  notes: "Auto-approved (all)"

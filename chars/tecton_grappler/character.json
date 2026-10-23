@@ -1,0 +1,82 @@
+{
+  "id": "tecton_grappler",
+  "displayName": "Tecton",
+  "title": "Seismic Colossus",
+  "archetype": "grappler",
+  "version": "1.0.0",
+  "themeColor": "#f59e0b",
+  "secondaryColor": "#451a03",
+  "model": {
+    "file": "model.glb",
+    "heightMeters": 2.45,
+    "statureRatio": 1.36,
+    "shoulderWidthRatio": 1.45,
+    "armSpreadOffsetDeg": 12,
+    "forwardAxis": "+Z"
+  },
+  "stats": {
+    "maxHealth": 1300,
+    "maxGuard": 400,
+    "maxMeter": 1000,
+    "walkSpeed": 3.4,
+    "strafeSpeed": 3.0,
+    "dashSpeed": 12.5,
+    "homingDashSpeed": 17.0,
+    "jumpVelocity": 10.5,
+    "gravity": 30.0,
+    "weight": 1.45
+  },
+  "boneMap": {
+    "hips": "Hips",
+    "spine": "Spine",
+    "chest": "Chest",
+    "head": "Head",
+    "upper_arm_l": "UpperArm.L",
+    "forearm_l": "ForeArm.L",
+    "hand_l": "Hand.L",
+    "upper_arm_r": "UpperArm.R",
+    "forearm_r": "ForeArm.R",
+    "hand_r": "Hand.R",
+    "thigh_l": "Thigh.L",
+    "shin_l": "Shin.L",
+    "foot_l": "Foot.L",
+    "thigh_r": "Thigh.R",
+    "shin_r": "Shin.R",
+    "foot_r": "Foot.R"
+  },
+  "hurtboxes": [
+    {
+      "id": "body_lower",
+      "socket": "hips",
+      "radius": 0.31,
+      "offset": [
+        0,
+        0.0,
+        0
+      ],
+      "scaleWithHeight": true
+    },
+    {
+      "id": "body_upper",
+      "socket": "chest",
+      "radius": 0.35,
+      "offset": [
+        0,
+        0.08,
+        0
+      ],
+      "scaleWithHeight": true
+    },
+    {
+      "id": "head",
+      "socket": "head",
+      "radius": 0.21,
+      "offset": [
+        0,
+        0.04,
+        0
+      ],
+      "scaleWithHeight": true
+    }
+  ]
+}

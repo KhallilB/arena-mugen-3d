@@ -1,0 +1,94 @@
+{
+  "aiVersion": "1.0.0",
+  "defaultAiLevel": 6,
+  "personality": {
+    "style": "bait_and_blink",
+    "preferredRangeMeters": [
+      2.5,
+      5.0
+    ],
+    "aggression": 0.7,
+    "defense": 0.55,
+    "armorCounterBias": 0.25,
+    "sidestepBias": 0.7,
+    "homingDashBias": 0.55,
+    "orbitDirectionBias": 0.0,
+    "comboFollowthrough": 0.9
+  },
+  "comboRoutes": [
+    {
+      "id": "bnb_launcher_route",
+      "starter": "light_1",
+      "condition": "ON_HIT",
+      "sequence": [
+        "light_2",
+        "heavy_launcher",
+        "homing_dash",
+        "air_light_1",
+        "air_light_2",
+        "air_heavy"
+      ],
+      "weight": 0.7
+    },
+    {
+      "id": "block_tick_throw",
+      "starter": "light_1",
+      "condition": "ON_BLOCK",
+      "sequence": [
+        "special_forward"
+      ],
+      "weight": 0.65
+    }
+  ],
+  "triggers": [
+    {
+      "id": "armor_through_poke",
+      "priority": 90,
+      "when": {
+        "opponentState": [
+          "ATTACK_STARTUP",
+          "ATTACK_ACTIVE"
+        ],
+        "distanceMeters": [
+          0.5,
+          2.4
+        ]
+      },
+      "action": "special_back",
+      "probability": 0.75
+    },
+    {
+      "id": "punish_whiffed_recovery",
+      "priority": 85,
+      "when": {
+        "opponentState": [
+          "ATTACK_RECOVERY"
+        ],
+        "distanceMeters": [
+          1.0,
+          3.5
+        ]
+      },
+      "action": "heavy_launcher",
+      "probability": 0.85
+    },
+    {
+      "id": "zone_or_close_gap",
+      "priority": 70,
+      "when": {
+        "opponentState": [
+          "IDLE",
+          "MOVE",
+          "ATTACK_STARTUP"
+        ],
+        "distanceMeters": [
+          6.0,
+          20.0
+        ],
+        "minMeter": 150
+      },
+      "action": "homing_dash",
+      "probability": 0.6
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "arena-mugen-3d",
+  "version": "0.1.0",
+  "private": false,
+  "description": "3D Arena M.U.G.E.N — Moddable 60Hz 3D Arena Fighting Game Engine with Multi-Height Retargeting & AI Character Pipeline",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12 <23"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run && python3 -I -m unittest discover -s tools/tests",
+    "test:py": "python3 -I -m unittest discover -s tools/tests",
+    "check-spec": "python3 -I evidence/structure_check.py docs/3d_arena_mugen_spec.md && python3 -I evidence/spec_check.py docs/3d_arena_mugen_spec.md",
+    "build-common-anims": "/opt/homebrew/bin/blender -b --factory-startup --python-exit-code 1 -P tools/build_common_anims.py -- --clips all",
+    "normalize-chars": "python3 tools/generate_roster.py --mode procedural --clips all",
+    "approve-chars": "python3 tools/approve_char.py --all --by dev",
+    "validate-chars": "python3 tools/validate_char.py --all",
+    "generate-chars": "python3 tools/generate_roster.py --mode procedural --clips all --approve-all --by dev"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/three": "^0.173.0",
+    "jsdom": "^25.0.1",
+    "mermaid": "^11.17.2",
+    "typescript": "^5.7.3",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}

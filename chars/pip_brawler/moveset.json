@@ -1,0 +1,688 @@
+{
+  "moves": {
+    "light_1": {
+      "displayName": "Quick Jab",
+      "type": "STRIKE",
+      "chainOnly": false,
+      "input": {
+        "button": "LIGHT",
+        "direction": "ANY",
+        "airborne": false
+      },
+      "animation": "light_1",
+      "totalFrames": 24,
+      "pitchTracking": true,
+      "pitchLimb": "upper_arm_r",
+      "tracking": {
+        "startFrame": 1,
+        "endFrame": 6,
+        "turnRateDegPerSec": 540
+      },
+      "velocity": [
+        {
+          "startFrame": 2,
+          "endFrame": 7,
+          "forward": 4.5,
+          "up": 0,
+          "lateral": 0
+        }
+      ],
+      "hitboxes": [
+        {
+          "id": "jab_fist",
+          "startFrame": 7,
+          "endFrame": 11,
+          "socket": "hand_r",
+          "endSocket": "forearm_r",
+          "radius": 0.22,
+          "offset": [
+            0,
+            0.1,
+            0
+          ],
+          "scaleWithHeight": true,
+          "maxHits": 1,
+          "rehitIntervalFrames": 0,
+          "damage": 55,
+          "guardDamage": 35,
+          "hitstunFrames": 17,
+          "blockstunFrames": 11,
+          "hitstopFrames": 5,
+          "launch": false,
+          "radialKnockback": false,
+          "knockback": {
+            "forward": -2.8,
+            "up": 0,
+            "lateral": 0
+          }
+        }
+      ],
+      "cancels": [
+        {
+          "startFrame": 7,
+          "endFrame": 18,
+          "condition": "ON_HIT_OR_BLOCK",
+          "targets": [
+            "light_2",
+            "heavy_neutral",
+            "heavy_launcher",
+            "special_neutral",
+            "special_forward"
+          ]
+        }
+      ]
+    },
+    "light_2": {
+      "displayName": "Cross Hook",
+      "type": "STRIKE",
+      "chainOnly": true,
+      "input": {
+        "button": "LIGHT",
+        "direction": "ANY",
+        "airborne": false
+      },
+      "animation": "light_2",
+      "totalFrames": 26,
+      "pitchTracking": true,
+      "pitchLimb": "upper_arm_l",
+      "tracking": {
+        "startFrame": 1,
+        "endFrame": 6,
+        "turnRateDegPerSec": 480
+      },
+      "velocity": [
+        {
+          "startFrame": 2,
+          "endFrame": 8,
+          "forward": 4.8,
+          "up": 0,
+          "lateral": 0
+        }
+      ],
+      "hitboxes": [
+        {
+          "id": "cross_fist",
+          "startFrame": 7,
+          "endFrame": 12,
+          "socket": "hand_l",
+          "endSocket": "forearm_l",
+          "radius": 0.24,
+          "offset": [
+            0,
+            0.1,
+            0
+          ],
+          "scaleWithHeight": true,
+          "maxHits": 1,
+          "rehitIntervalFrames": 0,
+          "damage": 65,
+          "guardDamage": 45,
+          "hitstunFrames": 19,
+          "blockstunFrames": 13,
+          "hitstopFrames": 5,
+          "launch": false,
+          "radialKnockback": false,
+          "knockback": {
+            "forward": -3.2,
+            "up": 0,
+            "lateral": 0
+          }
+        }
+      ],
+      "cancels": [
+        {
+          "startFrame": 7,
+          "endFrame": 19,
+          "condition": "ON_HIT_OR_BLOCK",
+          "targets": [
+            "light_3",
+            "heavy_neutral",
+            "heavy_launcher",
+            "special_neutral",
+            "special_forward"
+          ]
+        }
+      ]
+    },
+    "light_3": {
+      "displayName": "Spinning Finisher",
+      "type": "STRIKE",
+      "chainOnly": true,
+      "input": {
+        "button": "LIGHT",
+        "direction": "ANY",
+        "airborne": false
+      },
+      "animation": "light_3",
+      "totalFrames": 30,
+      "pitchTracking": true,
+      "pitchLimb": "upper_arm_r",
+      "velocity": [
+        {
+          "startFrame": 3,
+          "endFrame": 11,
+          "forward": 5.5,
+          "up": 0,
+          "lateral": 0
+        }
+      ],
+      "hitboxes": [
+        {
+          "id": "finisher_blow",
+          "startFrame": 9,
+          "endFrame": 14,
+          "socket": "hand_r",
+          "radius": 0.28,
+          "offset": [
+            0,
+            0.12,
+            0
+          ],
+          "scaleWithHeight": true,
+          "maxHits": 1,
+          "rehitIntervalFrames": 0,
+          "damage": 90,
+          "guardDamage": 65,
+          "hitstunFrames": 24,
+          "blockstunFrames": 15,
+          "hitstopFrames": 7,
+          "launch": true,
+          "radialKnockback": false,
+          "knockback": {
+            "forward": -10.5,
+            "up": 6.5,
+            "lateral": 0
+          }
+        }
+      ],
+      "cancels": []
+    },
+    "heavy_neutral": {
+      "displayName": "Crushing Haymaker",
+      "type": "STRIKE",
+      "chainOnly": false,
+      "input": {
+        "button": "HEAVY",
+        "direction": "NEUTRAL",
+        "airborne": false
+      },
+      "animation": "heavy_neutral",
+      "totalFrames": 40,
+      "pitchTracking": true,
+      "pitchLimb": "upper_arm_r",
+      "velocity": [
+        {
+          "startFrame": 4,
+          "endFrame": 14,
+          "forward": 6.0,
+          "up": 0,
+          "lateral": 0
+        }
+      ],
+      "hitboxes": [
+        {
+          "id": "heavy_swing",
+          "startFrame": 12,
+          "endFrame": 18,
+          "socket": "hand_r",
+          "endSocket": "forearm_r",
+          "radius": 0.3,
+          "offset": [
+            0,
+            0.12,
+            0
+          ],
+          "scaleWithHeight": true,
+          "maxHits": 1,
+          "rehitIntervalFrames": 0,
+          "damage": 110,
+          "guardDamage": 90,
+          "hitstunFrames": 26,
+          "blockstunFrames": 16,
+          "hitstopFrames": 8,
+          "launch": false,
+          "radialKnockback": false,
+          "knockback": {
+            "forward": -6.5,
+            "up": 0,
+            "lateral": 0
+          }
+        }
+      ],
+      "cancels": [
+        {
+          "startFrame": 12,
+          "endFrame": 24,
+          "condition": "ON_HIT_OR_BLOCK",
+          "targets": [
+            "special_neutral",
+            "special_forward"
+          ]
+        }
+      ]
+    },
+    "heavy_forward": {
+      "displayName": "Repulsive Nova",
+      "type": "STRIKE",
+      "chainOnly": false,
+      "input": {
+        "button": "HEAVY",
+        "direction": "FORWARD",
+        "airborne": false
+      },
+      "animation": "heavy_forward",
+      "totalFrames": 44,
+      "pitchTracking": true,
+      "pitchLimb": "both_arms",
+      "velocity": [
+        {
+          "startFrame": 3,
+          "endFrame": 12,
+          "forward": 5.0,
+          "up": 0,
+          "lateral": 0
+        }
+      ],
+      "hitboxes": [
+        {
+          "id": "nova_burst",
+          "startFrame": 13,
+          "endFrame": 19,
+          "socket": "chest",
+          "radius": 0.45,
+          "offset": [
+            0,
+            0.1,
+            0
+          ],
+          "scaleWithHeight": true,
+          "maxHits": 1,
+          "rehitIntervalFrames": 0,
+          "damage": 105,
+          "guardDamage": 85,
+          "hitstunFrames": 28,
+          "blockstunFrames": 16,
+          "hitstopFrames": 8,
+          "launch": true,
+          "radialKnockback": true,
+          "knockback": {
+            "forward": -13.0,
+            "up": 5.5,
+            "lateral": 0
+          }
+        }
+      ],
+      "cancels": []
+    },
+    "heavy_launcher": {
+      "displayName": "Somersault Flip Kick",
+      "type": "STRIKE",
+      "chainOnly": false,
+      "input": {
+        "button": "HEAVY",
+        "direction": "BACK",
+        "airborne": false
+      },
+      "animation": "heavy_launcher",
+      "totalFrames": 42,
+      "pitchTracking": true,
+      "pitchLimb": "both_legs",
+      "velocity": [
+        {
+          "startFrame": 3,
+          "endFrame": 11,
+          "forward": 4.2,
+          "up": 0,
+          "lateral": 0
+        }
+      ],
+      "hitboxes": [
+        {
+          "id": "launcher_hit",
+          "startFrame": 10,
+          "endFrame": 16,
+          "socket": "foot_r",
+          "radius": 0.3,
+          "offset": [
+            0,
+            0.12,
+            0
+          ],
+          "scaleWithHeight": true,
+          "maxHits": 1,
+          "rehitIntervalFrames": 0,
+          "damage": 95,
+          "guardDamage": 70,
+          "hitstunFrames": 32,
+          "blockstunFrames": 14,
+          "hitstopFrames": 8,
+          "launch": true,
+          "radialKnockback": false,
+          "knockback": {
+            "forward": -2.5,
+            "up": 11.5,
+            "lateral": 0
+          }
+        }
+      ],
+      "cancels": [
+        {
+          "startFrame": 10,
+          "endFrame": 24,
+          "condition": "ON_HIT",
+          "targets": [
+            "homing_dash"
+          ]
+        }
+      ]
+    },
+    "air_light_1": {
+      "displayName": "Aerial Jab",
+      "type": "STRIKE",
+      "chainOnly": false,
+      "input": {
+        "button": "LIGHT",
+        "direction": "ANY",
+        "airborne": true
+      },
+      "animation": "air_light_1",
+      "totalFrames": 22,
+      "pitchTracking": true,
+      "pitchLimb": "upper_arm_r",
+      "velocity": [
+        {
+          "startFrame": 1,
+          "endFrame": 8,
+          "forward": 3.5,
+          "up": 1.5,
+          "lateral": 0
+        }
+      ],
+      "hitboxes": [
+        {
+          "id": "air_jab_box",
+          "startFrame": 6,
+          "endFrame": 11,
+          "socket": "hand_r",
+          "radius": 0.24,
+          "offset": [
+            0,
+            0.1,
+            0
+          ],
+          "scaleWithHeight": true,
+          "maxHits": 1,
+          "rehitIntervalFrames": 0,
+          "damage": 50,
+          "guardDamage": 30,
+          "hitstunFrames": 20,
+          "blockstunFrames": 10,
+          "hitstopFrames": 5,
+          "launch": true,
+          "radialKnockback": false,
+          "knockback": {
+            "forward": -2.0,
+            "up": 4.5,
+            "lateral": 0
+          }
+        }
+      ],
+      "cancels": [
+        {
+          "startFrame": 6,
+          "endFrame": 16,
+          "condition": "ON_HIT_OR_BLOCK",
+          "targets": [
+            "air_light_2",
+            "air_heavy"
+          ]
+        }
+      ]
+    },
+    "air_light_2": {
+      "displayName": "Aerial Kick",
+      "type": "STRIKE",
+      "chainOnly": true,
+      "input": {
+        "button": "LIGHT",
+        "direction": "ANY",
+        "airborne": true
+      },
+      "animation": "air_light_2",
+      "totalFrames": 24,
+      "pitchTracking": true,
+      "pitchLimb": "thigh_r",
+      "velocity": [
+        {
+          "startFrame": 1,
+          "endFrame": 9,
+          "forward": 3.8,
+          "up": 1.8,
+          "lateral": 0
+        }
+      ],
+      "hitboxes": [
+        {
+          "id": "air_kick_box",
+          "startFrame": 7,
+          "endFrame": 12,
+          "socket": "foot_r",
+          "radius": 0.26,
+          "offset": [
+            0,
+            0.1,
+            0
+          ],
+          "scaleWithHeight": true,
+          "maxHits": 1,
+          "rehitIntervalFrames": 0,
+          "damage": 60,
+          "guardDamage": 35,
+          "hitstunFrames": 22,
+          "blockstunFrames": 11,
+          "hitstopFrames": 5,
+          "launch": true,
+          "radialKnockback": false,
+          "knockback": {
+            "forward": -2.4,
+            "up": 4.8,
+            "lateral": 0
+          }
+        }
+      ],
+      "cancels": [
+        {
+          "startFrame": 7,
+          "endFrame": 18,
+          "condition": "ON_HIT_OR_BLOCK",
+          "targets": [
+            "air_heavy"
+          ]
+        }
+      ]
+    },
+    "air_heavy": {
+      "displayName": "Meteor Smash",
+      "type": "STRIKE",
+      "chainOnly": false,
+      "input": {
+        "button": "HEAVY",
+        "direction": "ANY",
+        "airborne": true
+      },
+      "animation": "air_heavy",
+      "totalFrames": 34,
+      "pitchTracking": true,
+      "pitchLimb": "both_arms",
+      "velocity": [
+        {
+          "startFrame": 2,
+          "endFrame": 12,
+          "forward": 4.5,
+          "up": -2.0,
+          "lateral": 0
+        }
+      ],
+      "hitboxes": [
+        {
+          "id": "air_smash_box",
+          "startFrame": 10,
+          "endFrame": 16,
+          "socket": "hand_r",
+          "radius": 0.32,
+          "offset": [
+            0,
+            0.12,
+            0
+          ],
+          "scaleWithHeight": true,
+          "maxHits": 1,
+          "rehitIntervalFrames": 0,
+          "damage": 105,
+          "guardDamage": 75,
+          "hitstunFrames": 30,
+          "blockstunFrames": 14,
+          "hitstopFrames": 9,
+          "launch": true,
+          "radialKnockback": false,
+          "knockback": {
+            "forward": -12.5,
+            "up": -6.0,
+            "lateral": 0
+          }
+        }
+      ],
+      "cancels": []
+    },
+    "special_neutral": {
+      "displayName": "Tracking Solar Orbs",
+      "type": "PROJECTILE",
+      "chainOnly": false,
+      "input": {
+        "button": "SPECIAL",
+        "direction": "NEUTRAL",
+        "airborne": false
+      },
+      "animation": "special_projectile",
+      "totalFrames": 34,
+      "projectile": {
+        "spawnFrames": [
+          12,
+          18
+        ],
+        "socket": "hand_r",
+        "speed": 14.0,
+        "turnRateDegPerSec": 90.0,
+        "lifetimeFrames": 90,
+        "radius": 0.28,
+        "pierce": false,
+        "damage": 45,
+        "guardDamage": 25,
+        "hitstunFrames": 18,
+        "blockstunFrames": 12,
+        "hitstopFrames": 4,
+        "launch": false,
+        "knockback": {
+          "forward": -3.5,
+          "up": 0,
+          "lateral": 0
+        }
+      },
+      "cancels": []
+    },
+    "special_forward": {
+      "displayName": "Tectonic Crush (Command Grab)",
+      "type": "THROW",
+      "chainOnly": false,
+      "input": {
+        "button": "SPECIAL",
+        "direction": "FORWARD",
+        "airborne": false
+      },
+      "animation": "throw_grab",
+      "totalFrames": 46,
+      "pitchTracking": true,
+      "pitchLimb": "upper_arm_r",
+      "armor": {
+        "startFrame": 3,
+        "endFrame": 12,
+        "hits": 1
+      },
+      "velocity": [
+        {
+          "startFrame": 1,
+          "endFrame": 10,
+          "forward": 8.0,
+          "up": 0,
+          "lateral": 0
+        }
+      ],
+      "hitboxes": [
+        {
+          "id": "grab_box",
+          "startFrame": 9,
+          "endFrame": 13,
+          "socket": "hand_r",
+          "radius": 0.36,
+          "offset": [
+            0,
+            0.15,
+            0
+          ],
+          "scaleWithHeight": true,
+          "maxHits": 1,
+          "unblockable": true,
+          "throwReleaseFrame": 28,
+          "damage": 160,
+          "guardDamage": 0,
+          "hitstunFrames": 45,
+          "blockstunFrames": 0,
+          "hitstopFrames": 10,
+          "launch": true,
+          "knockback": {
+            "forward": -14.0,
+            "up": 9.0,
+            "lateral": 0
+          }
+        }
+      ],
+      "cancels": []
+    },
+    "special_back": {
+      "displayName": "Phantom Blink",
+      "type": "TELEPORT",
+      "chainOnly": false,
+      "input": {
+        "button": "SPECIAL",
+        "direction": "BACK",
+        "airborne": false
+      },
+      "animation": "step_dodge",
+      "totalFrames": 22,
+      "teleport": {
+        "vanishFrame": 4,
+        "reappearFrame": 10,
+        "invulnerableFrames": [
+          3,
+          12
+        ],
+        "targetAnchor": "BEHIND_OPPONENT",
+        "offsetMeters": -1.35,
+        "clampArenaRadiusMeters": 19.2,
+        "faceOpponentOnExit": true
+      },
+      "cancels": [
+        {
+          "startFrame": 11,
+          "endFrame": 20,
+          "condition": "ALWAYS",
+          "targets": [
+            "light_1",
+            "heavy_neutral",
+            "heavy_launcher"
+          ]
+        }
+      ]
+    }
+  }
+}

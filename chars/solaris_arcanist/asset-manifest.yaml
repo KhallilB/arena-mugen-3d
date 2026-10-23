@@ -1,0 +1,28 @@
+asset_id: character.solaris_arcanist.v1
+spec_hash: "sha256:8eab7b81d928f96a9d5360c6f77cd86b630d2ecf5afca3dee54825e27a72a07a"
+provider: "blender-procedural"
+provider_model: "blender-5.2.1-lts"
+task_id: "local-gen-solaris_arcanist-001"
+created_at: "2026-10-23T05:48:20+00:00"
+request:
+  prompt: "Regal 1.85m astral battle-mage in armored solar vestments, symmetrical A-pose."
+  settings:
+    height_meters: 1.85
+    arm_spread_offset_deg: 6
+  input_hashes: []
+output:
+  format: glb
+  uri: "chars/solaris_arcanist/model.glb"
+  hash: "sha256:0026ded2af674dfc0edb402ced876233d10c0aa3d56e63f27bbbfa30f815c35f"
+  triangle_count: 120
+  measured_height_meters: 1.85
+  lowest_vertex_y: 0.0
+validation:
+  automated: pass
+  checked_at: "2026-10-23T06:26:53+00:00"
+approval:
+  status: approved
+  approved_by: "dev"
+  approved_at: "2026-10-23T05:48:23+00:00"
+  manifest_hash: "sha256:9b4879fe4515bf1fcbfdfaa158793ff37f731ac6870cd85109396f077269478d"
+  notes: "Auto-approved (all)"

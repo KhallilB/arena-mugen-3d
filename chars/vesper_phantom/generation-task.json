@@ -1,0 +1,13 @@
+{
+  "asset_id": "character.vesper_phantom.v1",
+  "idempotency_key": "sha256:1ea274219533765649e94edf20aa215f62e35ebc96fec0bf708bf7a809acaf04",
+  "provider": "blender-procedural",
+  "provider_model": "blender-5.2.1-lts",
+  "task_id": "local-gen-vesper_phantom-001",
+  "status": "SUCCEEDED",
+  "created_at": "2026-10-23T05:48:17+00:00",
+  "updated_at": "2026-10-23T05:48:17+00:00",
+  "poll_count": 1,
+  "raw_output_uri": "chars/vesper_phantom/.cache/raw_model.glb",
+  "error": null
+}

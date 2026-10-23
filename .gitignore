@@ -1,0 +1,10 @@
+node_modules/
+dist/
+chars/*/.cache/
+*.tmp
+.*.tmp
+.DS_Store
+coverage/
+__pycache__/
+*.pyc
+

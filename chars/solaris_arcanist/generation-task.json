@@ -1,0 +1,13 @@
+{
+  "asset_id": "character.solaris_arcanist.v1",
+  "idempotency_key": "sha256:3fc320f312073b11c8d1ce7871b86016e77d48b93c6831f27f7392ae1f546142",
+  "provider": "blender-procedural",
+  "provider_model": "blender-5.2.1-lts",
+  "task_id": "local-gen-solaris_arcanist-001",
+  "status": "SUCCEEDED",
+  "created_at": "2026-10-23T05:48:20+00:00",
+  "updated_at": "2026-10-23T05:48:20+00:00",
+  "poll_count": 1,
+  "raw_output_uri": "chars/solaris_arcanist/.cache/raw_model.glb",
+  "error": null
+}
