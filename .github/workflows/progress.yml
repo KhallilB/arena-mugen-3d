@@ -1,0 +1,13 @@
+# kcb.pro's progress check: contract, append-only, evidence of new entries.
+name: Progress
+on:
+  pull_request:
+    paths: [progress.json]
+  push:
+    branches: [main]
+    paths: [progress.json]
+jobs:
+  progress:
+    uses: KhallilB/kcb.pro/.github/workflows/progress-check.yml@main
+    with:
+      slug: mugen-arena
